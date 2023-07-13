@@ -1,6 +1,7 @@
 import { Box, Grid } from "@mui/material";
 import "./App.css";
 import InputDate from "./InputDate";
+import SubmitButton from "./SubmitButton";
 
 const App = () => {
   const calculatorContainerStyles = {
@@ -18,6 +19,7 @@ const App = () => {
       flexDirection={"column"}
     >
       <InputDate />
+      <SubmitButton />
     </Box>
   );
 };

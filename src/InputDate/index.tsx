@@ -1,4 +1,5 @@
-import { Grid, TextField, Typography } from "@mui/material";
+import { Grid, TextField } from "@mui/material";
+import { TextInputField } from "./style";
 
 const InputDate = () => {
   const inputDateContainer = {
@@ -20,15 +21,15 @@ const InputDate = () => {
         style={inputDateContainer}
       >
         <Grid item className="input-date-day" style={inputDayDateStyle}>
-          <Typography>DAY</Typography>
+          <TextInputField>DAY</TextInputField>
           <TextField type="text"></TextField>
         </Grid>
         <Grid item className="input-date-day" style={inputDayDateStyle}>
-          <Typography>MONTH</Typography>
+          <TextInputField textAlign={"start"}>MONTH</TextInputField>
           <TextField type="text"></TextField>
         </Grid>
         <Grid item className="input-date-day" style={inputDayDateStyle}>
-          <Typography>YEAR</Typography>
+          <TextInputField textAlign={"start"}>YEAR</TextInputField>
           <TextField type="text"></TextField>
         </Grid>
       </Grid>
