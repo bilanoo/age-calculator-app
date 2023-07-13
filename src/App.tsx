@@ -1,7 +1,8 @@
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import "./App.css";
 import InputDate from "./InputDate";
 import SubmitButton from "./SubmitButton";
+import OutputDate from "./OutputDate";
 
 const App = () => {
   const calculatorContainerStyles = {
@@ -20,6 +21,7 @@ const App = () => {
     >
       <InputDate />
       <SubmitButton />
+      <OutputDate />
     </Box>
   );
 };
