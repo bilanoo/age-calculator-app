@@ -11,11 +11,19 @@ const App = () => {
     width: "40vh",
     height: "50vh",
     borderRadius: "15px 15px 100px",
+    "@media only screen and (min-width: 992px)": {
+      width: "70vh",
+      height: "40vh",
+    },
+    "@media only screen and (max-width: 600px)": {
+      width: "40vh",
+      height: "60vh",
+    },
   };
   return (
     <Box
       className="calculator-container"
-      style={calculatorContainerStyles}
+      sx={calculatorContainerStyles}
       boxSizing={"border-box"}
       flexDirection={"column"}
     >

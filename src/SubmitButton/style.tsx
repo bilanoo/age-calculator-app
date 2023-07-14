@@ -8,4 +8,13 @@ export const CustomDivider = styled(Divider)(() => ({
     position: "relative",
     overflow: "visible",
   },
+  ".MuiDivider-wrapper": {
+    "@media only screen and (min-width: 992px)": {
+      position: "absolute",
+      marginLeft: "auto",
+      marginRight: "0px",
+      right: "-10px",
+      top: "-40px",
+    },
+  },
 }));

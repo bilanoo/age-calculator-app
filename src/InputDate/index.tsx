@@ -30,7 +30,12 @@ const InputDate = () => {
     }
   }
 
-  console.log(day);
+  const textStyles = {
+    "@media only screen and (min-width: 992px)": {
+      marginLeft: "30px",
+    },
+  };
+
   return (
     <>
       <Grid
@@ -39,7 +44,7 @@ const InputDate = () => {
         style={inputDateContainer}
       >
         <Grid item className="input-date-day" style={inputDayDateStyle}>
-          <TextInputField>DAY</TextInputField>
+          <TextInputField sx={textStyles}>DAY</TextInputField>
           <TextField
             type="text"
             onChange={handleChange}
@@ -48,7 +53,9 @@ const InputDate = () => {
           ></TextField>
         </Grid>
         <Grid item className="input-date-day" style={inputDayDateStyle}>
-          <TextInputField textAlign={"start"}>MONTH</TextInputField>
+          <TextInputField textAlign={"start"} sx={textStyles}>
+            MONTH
+          </TextInputField>
           <TextField
             type="text"
             onChange={handleChange}
@@ -57,7 +64,9 @@ const InputDate = () => {
           ></TextField>
         </Grid>
         <Grid item className="input-date-day" style={inputDayDateStyle}>
-          <TextInputField textAlign={"start"}>YEAR</TextInputField>
+          <TextInputField textAlign={"start"} sx={textStyles}>
+            YEAR
+          </TextInputField>
           <TextField
             type="text"
             onChange={handleChange}

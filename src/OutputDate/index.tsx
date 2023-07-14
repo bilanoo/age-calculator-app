@@ -11,9 +11,14 @@ const OutputDate = () => {
         <Typography
           variant="h1"
           sx={{
-            fontWeight: "800",
+            fontWeight: "900",
             fontStyle: "italic",
             fontSize: "70px",
+            marginLeft: "-20px",
+            textShadow: "2px 0 #888888",
+            "@media only screen and (max-width: 600px)": {
+              fontSize: "50px",
+            },
           }}
         >
           <span style={{ color: "#864CFF" }}>
@@ -24,10 +29,14 @@ const OutputDate = () => {
         <Typography
           variant="h1"
           sx={{
-            fontWeight: "800",
+            fontWeight: "900",
             fontStyle: "italic",
             marginLeft: "20px",
             fontSize: "70px",
+            textShadow: "2px 0 #888888",
+            "@media only screen and (max-width: 600px)": {
+              fontSize: "50px",
+            },
           }}
         >
           <span style={{ color: "#864CFF" }}>
@@ -38,10 +47,14 @@ const OutputDate = () => {
         <Typography
           variant="h1"
           sx={{
-            fontWeight: "800",
+            fontWeight: "900",
             fontStyle: "italic",
             marginLeft: "-60px",
             fontSize: "70px",
+            textShadow: "2px 0 #888888",
+            "@media only screen and (max-width: 600px)": {
+              fontSize: "50px",
+            },
           }}
         >
           <span style={{ color: "#864CFF" }}>
