@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import IconArrow from "../../assets/images/icon-arrow.svg";
+import IconArrow from "../assets/images/icon-arrow.svg";
 import { CustomDivider } from "./style";
 import useInputDateStore from "../stores/inputDateStore.store";
 
